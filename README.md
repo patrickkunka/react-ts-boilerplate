@@ -23,3 +23,4 @@ A simple boilerplate for developing React applications in TypeScript, including:
 - `types:scss`: Generates static typing for SCSS imports
 - `types:scss:watch`: As above, but watches for file changes
 - `test`: Runs unit tests
+- `test:watch`: Runs unit tests and watches for file changes

@@ -14,7 +14,8 @@
         "build": "npm run types:scss && TS_NODE_PROJECT=config/typescript/tsconfig.node.json webpack --config ./config/webpack/createWebpackConfig.ts --env.webpack=production",
         "types:scss": "rm -f **/*.scss.d.ts && tsm ./src --camelCase",
         "types:scss:watch": "npm run types:scss -- --watch",
-        "test": "TS_NODE_PROJECT=config/typescript/tsconfig.node.json mocha --opts ./config/mocha/mocha.opts"
+        "test": "TS_NODE_PROJECT=config/typescript/tsconfig.node.json mocha --opts ./config/mocha/mocha.opts",
+        "test:watch": "npm run test -- --watch"
     },
     "dependencies": {
         "cors": "^2.8.5",
