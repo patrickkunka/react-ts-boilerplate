@@ -1,0 +1,33 @@
+@import '../../Styles/colors';
+@import '../../Styles/typography';
+
+.button {
+    background: transparent;
+    position: relative;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.button-primary {
+    @extend .button;
+    @extend %text-button;
+
+    background: $haze;
+    padding: 1rem;
+    min-width: 10rem;
+    color: $tarmac;
+    text-transform: uppercase;
+    transition: background-color 100ms;
+}
+
+.button-primary:hover {
+    background: white;
+}
+
+.button-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

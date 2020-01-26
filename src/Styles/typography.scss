@@ -1,0 +1,48 @@
+@import './colors';
+
+$base-font-size: 13px;
+$heading-font-size: 16px;
+$body-font-size: 16px;
+
+%text-base {
+    font-family: Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: greyscale;
+    font-size: $base-font-size;
+    color: $white;
+}
+
+%text-heading {
+    @extend %text-base;
+
+    font-size: $heading-font-size;
+    font-weight: 700;
+    color: $white;
+}
+
+%text-body {
+    @extend %text-base;
+
+    font-size: $heading-font-size;
+    font-weight: 400;
+    color: $white;
+}
+
+%text-heading-special {
+    @extend %text-heading;
+
+    font-family: Helvetica, sans-serif;
+}
+
+%text-monospace {
+    @extend %text-base;
+
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+%text-button {
+    @extend %text-heading-special;
+
+    font-weight: 700;
+    font-size: 1.1rem;
+}

@@ -1,0 +1,57 @@
+{
+    "name": "react-ts-boilerplate",
+    "author": {
+        "name": "Patrick Kunka",
+        "email": "patrick@kunkalabs.com"
+    },
+    "version": "0.0.0",
+    "description": "",
+    "private": true,
+    "main": "./dist/index.js",
+    "scripts": {
+        "start": "ts-node --project config/typescript/tsconfig.node.json ./server/index.ts",
+        "build:client": "npm run types:scss && TS_NODE_PROJECT=config/typescript/tsconfig.node.json webpack --config ./config/webpack/createWebpackConfig.ts --env.webpack=production",
+        "dev": "npm run types:scss && TS_NODE_PROJECT=config/typescript/tsconfig.node.json webpack-dev-server --config ./config/webpack/createWebpackConfig.ts --hot --watch --progress --port 8080 --env.webpack=development",
+        "types:scss": "rm -f **/*.scss.d.ts && tsm ./src --camelCase",
+        "types:scss:watch": "npm run types:scss -- --watch"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "4.17.1"
+    },
+    "devDependencies": {
+        "@types/chai": "4.1.7",
+        "@types/express": "4.17.0",
+        "@types/mocha": "5.2.7",
+        "@types/node": "12.6.8",
+        "@types/react": "^16.9.19",
+        "@types/react-dom": "^16.9.5",
+        "@types/sinon": "7.0.13",
+        "chai": "4.2.0",
+        "copy-webpack-plugin": "^5.0.4",
+        "css-loader": "^3.2.0",
+        "html-webpack-plugin": "^3.2.0",
+        "mini-css-extract-plugin": "^0.8.0",
+        "mocha": "6.2.0",
+        "node-sass": "^4.12.0",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "rxjs": "6.5.2",
+        "sass-loader": "^7.1.0",
+        "sinon": "7.4.1",
+        "style-loader": "^1.0.0",
+        "stylelint": "10.1.0",
+        "stylelint-config-css-modules": "1.4.0",
+        "stylelint-config-standard": "18.3.0",
+        "ts-loader": "6.0.4",
+        "ts-node": "8.3.0",
+        "tsconfig-paths-webpack-plugin": "^3.2.0",
+        "tslint": "^6.0.0",
+        "tslint-eslint-rules": "^5.4.0",
+        "typed-scss-modules": "0.0.11",
+        "typescript": "3.7.5",
+        "webpack": "4.36.1",
+        "webpack-cli": "3.3.6",
+        "webpack-dev-server": "^3.7.2"
+    }
+}

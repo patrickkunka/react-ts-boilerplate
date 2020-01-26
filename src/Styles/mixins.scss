@@ -1,0 +1,10 @@
+@mixin tap-target($size: 35px) {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: $size;
+    width: $size;
+    margin: ($size / -2) 0 0 ($size / -2);
+    cursor: pointer;
+}

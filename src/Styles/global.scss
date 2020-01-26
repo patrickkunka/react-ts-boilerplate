@@ -1,0 +1,45 @@
+@import './colors';
+
+html {
+    font-size: 13px;
+}
+
+html,
+button,
+input {
+    font-family: 'DAZNOscine', helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-style: normal;
+    text-decoration: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    background: $ebony;
+    color: $white;
+}
+
+button {
+    border: none;
+    outline: none;
+    border-radius: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background: transparent;
+    color: $white;
+}

@@ -1,0 +1,18 @@
+{
+    "extends": [
+        "stylelint-config-standard",
+        "stylelint-config-css-modules"
+    ],
+    "ignoreFiles": "../../services/**/*.tsx",
+    "rules": {
+        "block-no-empty": true,
+        "indentation": 4,
+        "no-missing-end-of-source-newline": null,
+        "function-name-case": null,
+        "value-list-comma-newline-after": null,
+        "declaration-colon-newline-after": null,
+        "at-rule-no-unknown": [true, {
+            "ignoreAtRules": ["extend", "mixin", "include"]
+        }]
+     }
+}

@@ -1,0 +1,17 @@
+@import './colors';
+
+%wrapper {
+    max-width: 50rem;
+    padding: 1rem 0.75rem;
+    margin: 0 auto;
+}
+
+%wrapper-filled {
+    @extend %wrapper;
+
+    padding: 0.75rem;
+    background: $mako;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}

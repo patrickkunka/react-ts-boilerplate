@@ -1,0 +1,6 @@
+--require ts-node/register/transpile-only
+--recursive
+--watch-extensions ts
+--exit
+./services/test-harness/{,!(node_modules)/**}/*.test.ts
+./services/proxy/**/*.test.ts

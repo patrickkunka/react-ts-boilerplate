@@ -1,0 +1,18 @@
+@import '../../Styles/typography';
+@import '../../Styles/wrapper';
+
+.main {
+    @extend %wrapper;
+}
+
+.heading {
+    @extend %text-heading;
+
+    padding-bottom: 1rem;
+}
+
+@media all and (min-width: 50rem) {
+    .main {
+        padding-top: 1rem;
+    }
+}

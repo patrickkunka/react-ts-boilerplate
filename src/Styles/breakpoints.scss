@@ -1,0 +1,35 @@
+$breakpoint-1: 641px;
+$breakpoint-2: 769px;
+$breakpoint-3: 1025px;
+$breakpoint-4: 1241px;
+$breakpoint-5: 1601px;
+
+@media all and (min-width: $breakpoint-1) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media all and (min-width: $breakpoint-2) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media all and (min-width: $breakpoint-3) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media all and (min-width: $breakpoint-4) {
+    html {
+        font-size: 17px;
+    }
+}
+
+@media all and (min-width: $breakpoint-5) {
+    html {
+        font-size: 18px;
+    }
+}

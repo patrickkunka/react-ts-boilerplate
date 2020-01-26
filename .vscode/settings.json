@@ -1,0 +1,10 @@
+{
+    "tslint.configFile": "./config/tslint/tslint.json",
+    "typescript.preferences.quoteStyle": "single",
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "css.validate": false,
+    "stylelint.config": {
+        "extends": "./config/stylelint/.stylelintrc.json"
+    },
+    "prettier.configPath": "./config/prettier/.prettierrc"
+}
