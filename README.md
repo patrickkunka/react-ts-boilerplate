@@ -7,9 +7,11 @@ A simple boilerplate for developing React applications in TypeScript, including:
 - CSS Modules / SCSS
 - TS Node
 - Express
+- JSDOM
 - Mocha
 - Chai
 - Sinon
+- Enzyme
 - TSLint
 - Prettier
 
@@ -20,3 +22,4 @@ A simple boilerplate for developing React applications in TypeScript, including:
 - `build`: Bundles the react app and exports to `dist`
 - `types:scss`: Generates static typing for SCSS imports
 - `types:scss:watch`: As above, but watches for file changes
+- `test`: Runs unit tests

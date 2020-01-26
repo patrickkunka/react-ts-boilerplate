@@ -10,7 +10,7 @@ const fetchData = async (url: string): Promise<IResponse> => {
     let fetchResponse: Response;
 
     try {
-        fetchResponse = await fetch(url);
+        fetchResponse = await window.fetch(url);
     } catch (err) {
         // Handle network error
 
@@ -20,7 +20,7 @@ const fetchData = async (url: string): Promise<IResponse> => {
         return response;
     }
 
-    if (fetchResponse.status >= 400) {
+    if (!fetchResponse.ok) {
         // Handle status error
 
         response.success = false;
