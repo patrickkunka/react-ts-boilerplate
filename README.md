@@ -15,7 +15,7 @@ A simple boilerplate for developing React applications in TypeScript, including:
 
 #### Scripts
 
-- `start`: Starts an express server for mocking API repsonses
+- `start`: Starts an express server for mocking API responses
 - `dev`: Bundles the react app and serves over webpack dev server on 8080
 - `build`: Bundles the react app and exports to `dist`
 - `types:scss`: Generates static typing for SCSS imports
