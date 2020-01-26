@@ -10,8 +10,8 @@
     "main": "./dist/index.js",
     "scripts": {
         "start": "ts-node --project config/typescript/tsconfig.node.json ./server/index.ts",
-        "build:client": "npm run types:scss && TS_NODE_PROJECT=config/typescript/tsconfig.node.json webpack --config ./config/webpack/createWebpackConfig.ts --env.webpack=production",
         "dev": "npm run types:scss && TS_NODE_PROJECT=config/typescript/tsconfig.node.json webpack-dev-server --config ./config/webpack/createWebpackConfig.ts --hot --watch --progress --port 8080 --env.webpack=development",
+        "build": "npm run types:scss && TS_NODE_PROJECT=config/typescript/tsconfig.node.json webpack --config ./config/webpack/createWebpackConfig.ts --env.webpack=production",
         "types:scss": "rm -f **/*.scss.d.ts && tsm ./src --camelCase",
         "types:scss:watch": "npm run types:scss -- --watch"
     },
