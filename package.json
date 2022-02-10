@@ -43,7 +43,7 @@
         "mocha": "6.2.0",
         "mock-css-modules": "^1.0.0",
         "node-fetch": "^2.6.0",
-        "node-sass": "^4.12.0",
+        "node-sass": "^7.0.0",
         "react": "^16.12.0",
         "react-dom": "^16.12.0",
         "rxjs": "6.5.2",
